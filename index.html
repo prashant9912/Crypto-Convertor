@@ -1,0 +1,65 @@
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="calbox">
+    <div id="container">
+        <div id="cryptoContainer">
+            <select name="Crypto" id="Crypto" onchange="changeCurrency();">
+                <option selected="selected" value="Bitcoin">Bitcoin</option>
+                
+            </select>
+         
+            <div id="inputNumber1">
+                <input type="number" class="number" value="1.00" step="any" id="bi" onchange="CryptoConvert(this);" onkeyup="CryptoConvert(this);"
+                />
+            </div>
+        </div>
+        <div id="valutaContainer">
+            <select name="Fiat" id="Fiat" onchange="changeCurrency();">
+                <option disabled="Valuta" value="Valuta"> - &nbsp Fiat Currency </option>
+                <option value="AUD">AUD</option>
+                <option value="BRL">BRL</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="HKD">HKD</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option selected="selected" value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option selected="selected" value="USD">USD Dollars</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="ZAR">ZAR</option>
+                <option disabled="Kryptovaluta" value="Kryptovaluta">- &nbsp Cryptocurrency </option>
+            </select>
+            <br>
+            <div id="inputNumber2">
+                <input type="number" class="number" value="1" step="any" name="ci" id="ci" onchange="FiatConvert(this);" onkeyup="FiatConvert(this);"
+                />
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>

@@ -1,0 +1,43 @@
+
+#container {
+    width: 30%;
+    margin: 0 auto;
+    font-family: arial;
+    font-size: 20px;
+}
+
+#ci,
+#bi,
+#Fiat,
+#Crypto {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    animation: all 2s ease;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+}
+
+input{
+    padding-top: 10px;
+}
+
+#inputNumber1, #inputNumber2{
+    width: 97%;
+}
+#cryptoContainer,
+#valutaContainer {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.calbox > div{
+    display: inline-block;
+}
+
+.number{
+    font-size: 18px;
+}
